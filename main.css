@@ -1,0 +1,32 @@
+body{
+    font-family: garamond;
+    background-color: #F9F1DC;
+}
+header{
+    text-align: center;
+}
+
+figure{
+    text-align: center;
+}
+figure img{
+    border-bottom: 3px solid #F5BD26;
+    border-top: 3px solid #F5BD26;
+}
+
+section{
+    padding: 1em;
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+hr{
+    border-top: 1px solid #F5BD26;
+}
+
+footer address{
+margin-top: 2em;
+background-color: white;
+padding: 5em;
+}
