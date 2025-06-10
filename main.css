@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: garamond;
     background-color: #F9F1DC;
@@ -29,4 +33,48 @@ footer address{
 margin-top: 2em;
 background-color: white;
 padding: 5em;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.7em;
+    border-right: 1px solid rgb(187, 187, 187);
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+li:hover{
+    transform: scale(1.2); 
+    background-color: #F5BD26;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.atual{
+    background-color: #F5BD26;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 0.6em;
+    background-color: #F5BD26;
+    font-size: 16px;
+    max-width: 90em;
+}
+
+h2{
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+p{
+    text-align: center;
 }
