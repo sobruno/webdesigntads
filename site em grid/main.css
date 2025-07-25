@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "w w w w w"
+        "a b e e g" 
+        "a c f h i"
+        "a d f j j"
+        "z z z z z";
+    gap: 1em;
+    padding: 1em;
+}
+
+div {
+    padding: 1em;
+    background-color: #e3e9dc;
+}
+
+#a {
+    grid-area: a;
+}
+
+#a ul {
+    list-style: none;
+    padding: 0;
+}
+
+#a li {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    color: #467a8b;
+    cursor: pointer;
+    padding: 1em;
+}
+
+#b {
+    grid-area: b;
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+}
+
+#b button {
+    width: fit-content;
+    padding: 0.5em 1em;
+    background-color: #d9d9d9;
+    border: none;
+    cursor: pointer;
+}
+
+div#b p{
+    font-size: 20px;
+}
+
+#c {
+    grid-area: c;
+    height: 14em;
+}
+
+#c ul {
+    padding-left: 1em;
+}
+
+#d {
+    grid-area: d;
+    height: 14em;
+    background-image: url("palestrantes/ellen.jpg");
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+}
+
+#e {
+    grid-area: e;
+}
+
+#e h3 {
+    margin-bottom: 1em;
+}
+
+#e table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #dbe3d0;
+}
+
+#e td {
+    border: 1px solid #999;
+    padding: 0.5em;
+    text-align: left;
+}
+
+#f {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: start;
+}
+
+#f input[type="text"],
+#f input[type="number"] {
+    padding: 0.5em;
+    border: 1px solid #999;
+    background-color: #f6f6f6;
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+#f input[type="checkbox"] {
+    margin-right: 0.5em;
+
+}
+
+#f input[type="submit"] {
+    background-color: #1f2920;
+    color: white;
+    padding: 0.7em;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 14px;
+}
+
+#g, #h, #i {
+    height: 14em;
+    background-size: cover;
+    background-position: top left;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+}
+
+#g {
+    grid-area: g;
+    background-image: url("palestrantes/amanda.jpg");
+}
+
+#h {
+    grid-area: h;
+    background-image: url("palestrantes/georgia.jpg");
+}
+
+#i {
+    grid-area: i;
+    background-image: url("palestrantes/henrique.jpg");
+}
+
+#j {
+    grid-area: j;
+}
+
+#j ul {
+    margin-top: 0.5em;
+    padding-left: 1em;
+}
+
+header {
+    grid-area: w;
+    background: linear-gradient(to right, #2d4a4d, #4e797c);
+    color: white;
+    padding: 1em;
+    height: 6em;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+footer {
+    grid-area: z;
+    background-color: #2d4a4d;
+    padding: 2em;
+    height: 8em;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
